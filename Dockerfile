@@ -3,7 +3,7 @@ FROM gradle:6.6-jdk14
 USER root
 
 ENV \
-    BUILD_DEPS="apt-transport-https gnupg2 software-properties-common"  \
+    BUILD_DEPS="apt-transport-https gnupg2 software-properties-common golang-docker-credential-helpers"  \
     RUNTIME_DEPS="tar docker unzip curl git openssh-client ca-certificates docker-compose gettext-base"
 
 RUN \
